@@ -142,6 +142,10 @@ body {
     color: #FD9222;
     background-color: #FCF1E0;
 }
+/*==========================modal==========================*/
+/* .hidden {
+    visibility: hidden;
+} */
 
 .subscribe-backdrop {
     position: fixed;
@@ -159,11 +163,26 @@ body {
     transform: translate(-50%, -50%);
     padding: 201px 24px 32px 24px;
     border-radius: 15px;
+    /* width: 311px;
+    min-height: 350px; */
     background-color: #ffffff;
     background-image: url(./img/sabscribe-modal/sabscribe-modal-mobile-img@1x.jpg);
     background-repeat: no-repeat;
-    background-position: top;
     background-size: contain;
+    background-position: top;   
+}
+
+.sabscribe-modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.sabscribe-modal-close-icone {
+    fill: #ffffff;
 }
 
 .subscribe-modal-title {
@@ -176,8 +195,8 @@ body {
     text-transform: uppercase;
     color: #111111;
     max-width: 263px;
-    margin-top: 32px;
-    margin-bottom: 24px;
+    min-height: 48px;
+    margin-bottom: 24px; 
 }
 
 .subscribe-modal-title-color {
@@ -186,19 +205,31 @@ body {
 
 .subscribe-form {
     display: flex;
-    justify-content: center;
     align-items: center;   
 }
 
 .subscribe-form-input {
+    min-width: 263px;
     height: 45px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 100px;
-    
+    padding: 15px;    
+}
+
+.subscribe-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-form-input:focus, .subscribe-form-input:hover {
+    outline: none;
 }
 
 .subscribe-form-btn {
-    width: 100px;
+    min-width: 100px;
     height: 45px;
     background: #FD9222;
     border-radius: 100px;
@@ -209,7 +240,16 @@ body {
     text-align: center;
     color: var(--primary-text-color-theme-dark);
     padding: 14px 28px;
+}
 
+@media screen and (max-width: 767px) {
+    .subscribe-form {
+        position: relative;
+    }
+    .subscribe-form-btn {
+        position: absolute;
+        right: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -235,12 +275,26 @@ body {
 
 .subscribe-btn {
     min-width: 172px;
-}
-/* .subscribe-modal {
     
+}
+.subscribe-modal {
+    /* width: 538px;
+    min-height: 412px; */
+    padding: 236px 40px 40px 40px;
     background-image: url(./img/sabscribe-modal/sabscribe-modal-tablet-img@1x.jpg);
+} 
 
-} */
+.subscribe-modal-title {
+    max-width: 298px;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+}
+
+.subscribe-form-btn {
+    margin-left: 8px;
+    min-width: 137px;
+}
 }
 
 @media screen and (min-width: 1200px) {
