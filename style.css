@@ -69,18 +69,6 @@ body {
 
 
 /*===========================================================*/
-/* @media screen and (min-width: 768px) {
-    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-        (min-resolution: 192dpi) and (max-width: 767px),
-        (min-resolution: 2dppx) and (max-width: 767px) {
-            .subscribe {
-                background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.2)), url('./img/sabscribe/subscribe-mobile@2x.jpg');
-            }
-        }
-} */
-
 
 .subscribe {
     background-image: linear-gradient(0deg,
@@ -147,13 +135,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .subscribe-btn:hover, .subscribe-btn:focus {
-    color: #FD9222;
+    color: var(--accent-color);
     background-color: #FCF1E0;
 }
 /*==========================modal==========================*/
- .hidden {
+ /* .hidden {
     visibility: hidden;
-} 
+}  */
 
 .subscribe-backdrop {
     position: fixed;
@@ -171,8 +159,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transform: translate(-50%, -50%);
     padding: 201px 24px 32px 24px;
     border-radius: 15px;
-    /* width: 311px;
-    min-height: 350px; */
     background-color: #ffffff;
     background-image: url(./img/sabscribe-modal/sabscribe-modal-mobile-img@1x.jpg);
     background-repeat: no-repeat;
@@ -184,7 +170,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .subscribe {
+    .subscribe-modal {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.2),
                 rgba(0, 0, 0, 0.2)), url('./img/sabscribe-modal/sabscribe-modal-mobile-img@2x.jpg');
@@ -250,7 +236,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .subscribe-form-btn {
     min-width: 100px;
     height: 45px;
-    background: #FD9222;
+    background: var(--accent-color);
     border-radius: 100px;
     border: none;
     font-weight: 600;
@@ -311,8 +297,6 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
     
 }
 .subscribe-modal {
-    /* width: 538px;
-    min-height: 412px; */
     padding: 236px 40px 40px 40px;
     background-image: url(./img/sabscribe-modal/sabscribe-modal-tablet-img@1x.jpg);
 } 
@@ -321,7 +305,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 screen and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .subscribe {
+    .subscribe-modal {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.2),
                 rgba(0, 0, 0, 0.2)), url('./img/sabscribe-modal/sabscribe-modal-tablet-img@2x.jpg');
@@ -361,15 +345,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 }
 }
-/*@media screen and (min-width: 320px) {
-    
-}
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}*/
-@media screen and (max-width: 767px) {}
-
-@media screen and (min-width: 320px) {}
 
 
