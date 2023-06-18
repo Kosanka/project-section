@@ -1,3 +1,6 @@
+@import url(../css/subscribe.css);
+@import url(../css/overlay-form-new-chocolate.css);
+
 :root {
     --main-font-family: 'Montserrat', sans-serif;
     --accent-color: #fd9222;
@@ -49,9 +52,15 @@ body {
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 448px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 375px;
     }
 }
 
@@ -66,7 +75,6 @@ body {
         width: 1200px;
     }
 }
-
 
 /*===========================================================*/
 
