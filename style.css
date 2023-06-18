@@ -199,11 +199,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: #111111;
     max-width: 263px;
     min-height: 48px;
-    margin-bottom: 24px; 
+    margin-bottom: 24px;
+    
 }
 
 .subscribe-modal-title-color {
     color: var(--accent-color);
+    display: inline-block;
 }
 
 .subscribe-form {
